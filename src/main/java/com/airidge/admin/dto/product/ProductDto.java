@@ -11,12 +11,16 @@ import java.util.List;
 @Entity
 @Data
 public class ProductDto {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String Code;
     private String Name;
+
+    private String color;
+    private String size;
 
     private int cost;
     private int price;
